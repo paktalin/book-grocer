@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		464C54B6268F42DE00CC19A2 /* Book_GrocerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54B5268F42DE00CC19A2 /* Book_GrocerApp.swift */; };
-		464C54B8268F42DE00CC19A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54B7268F42DE00CC19A2 /* ContentView.swift */; };
+		464C54B8268F42DE00CC19A2 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54B7268F42DE00CC19A2 /* Onboarding.swift */; };
 		464C54BA268F42DF00CC19A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464C54B9268F42DF00CC19A2 /* Assets.xcassets */; };
 		464C54BD268F42DF00CC19A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464C54BC268F42DF00CC19A2 /* Preview Assets.xcassets */; };
 		464C54C5268F488800CC19A2 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54C4268F488800CC19A2 /* Page.swift */; };
 		464C54C9268F524E00CC19A2 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 464C54C8268F524E00CC19A2 /* SwiftUIX */; };
 		464C54CD268F59F300CC19A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 464C54CF268F59F300CC19A2 /* Localizable.strings */; };
+		464C54D3268F6B8C00CC19A2 /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54D2268F6B8C00CC19A2 /* HeaderText.swift */; };
+		464C54D5268F6C4700CC19A2 /* BodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54D4268F6C4700CC19A2 /* BodyText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		464C54B2268F42DE00CC19A2 /* Book Grocer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Grocer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		464C54B5268F42DE00CC19A2 /* Book_GrocerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_GrocerApp.swift; sourceTree = "<group>"; };
-		464C54B7268F42DE00CC19A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		464C54B7268F42DE00CC19A2 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		464C54B9268F42DF00CC19A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464C54BC268F42DF00CC19A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		464C54BE268F42DF00CC19A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		464C54C4268F488800CC19A2 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		464C54CE268F59F300CC19A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		464C54D2268F6B8C00CC19A2 /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
+		464C54D4268F6C4700CC19A2 /* BodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,11 @@
 		464C54B4268F42DE00CC19A2 /* Book Grocer */ = {
 			isa = PBXGroup;
 			children = (
+				464C54D1268F6B7B00CC19A2 /* Views */,
 				464C54CA268F595F00CC19A2 /* Resources */,
 				464C54C6268F488F00CC19A2 /* Model */,
 				464C54B5268F42DE00CC19A2 /* Book_GrocerApp.swift */,
-				464C54B7268F42DE00CC19A2 /* ContentView.swift */,
+				464C54B7268F42DE00CC19A2 /* Onboarding.swift */,
 				464C54BE268F42DF00CC19A2 /* Info.plist */,
 				464C54BB268F42DF00CC19A2 /* Preview Content */,
 			);
@@ -91,6 +96,15 @@
 				464C54CF268F59F300CC19A2 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		464C54D1268F6B7B00CC19A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				464C54D2268F6B8C00CC19A2 /* HeaderText.swift */,
+				464C54D4268F6C4700CC19A2 /* BodyText.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				464C54B8268F42DE00CC19A2 /* ContentView.swift in Sources */,
+				464C54B8268F42DE00CC19A2 /* Onboarding.swift in Sources */,
+				464C54D3268F6B8C00CC19A2 /* HeaderText.swift in Sources */,
 				464C54B6268F42DE00CC19A2 /* Book_GrocerApp.swift in Sources */,
 				464C54C5268F488800CC19A2 /* Page.swift in Sources */,
+				464C54D5268F6C4700CC19A2 /* BodyText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,14 +26,8 @@ struct PageView: View {
     var page: Page
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
-            Text(LocalizedStringKey(page.titleId))
-                .font(.system(size: 30, weight: .medium, design: .rounded))
-                .foregroundColor(Color("Green"))
-                .multilineTextAlignment(.center)
-            Text(LocalizedStringKey(page.descriptionId))
-                .font(.system(size: 14, weight: .light, design: .rounded))
-                .foregroundColor(Color("Green75"))
-                .multilineTextAlignment(.center)
+            HeaderText(text: page.titleId)
+            BodyText(text: page.descriptionId)
             Image(page.imageId).padding(.top, 40)
         }
     }
