@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,9 @@
 		464C54B8268F42DE00CC19A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54B7268F42DE00CC19A2 /* ContentView.swift */; };
 		464C54BA268F42DF00CC19A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464C54B9268F42DF00CC19A2 /* Assets.xcassets */; };
 		464C54BD268F42DF00CC19A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464C54BC268F42DF00CC19A2 /* Preview Assets.xcassets */; };
+		464C54C5268F488800CC19A2 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54C4268F488800CC19A2 /* Page.swift */; };
+		464C54C9268F524E00CC19A2 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 464C54C8268F524E00CC19A2 /* SwiftUIX */; };
+		464C54CD268F59F300CC19A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 464C54CF268F59F300CC19A2 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		464C54B9268F42DF00CC19A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464C54BC268F42DF00CC19A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		464C54BE268F42DF00CC19A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464C54C4268F488800CC19A2 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		464C54CE268F59F300CC19A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464C54C9268F524E00CC19A2 /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +58,10 @@
 		464C54B4268F42DE00CC19A2 /* Book Grocer */ = {
 			isa = PBXGroup;
 			children = (
+				464C54CA268F595F00CC19A2 /* Resources */,
+				464C54C6268F488F00CC19A2 /* Model */,
 				464C54B5268F42DE00CC19A2 /* Book_GrocerApp.swift */,
 				464C54B7268F42DE00CC19A2 /* ContentView.swift */,
-				464C54B9268F42DF00CC19A2 /* Assets.xcassets */,
 				464C54BE268F42DF00CC19A2 /* Info.plist */,
 				464C54BB268F42DF00CC19A2 /* Preview Content */,
 			);
@@ -67,6 +74,23 @@
 				464C54BC268F42DF00CC19A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		464C54C6268F488F00CC19A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				464C54C4268F488800CC19A2 /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		464C54CA268F595F00CC19A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				464C54B9268F42DF00CC19A2 /* Assets.xcassets */,
+				464C54CF268F59F300CC19A2 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +109,9 @@
 			dependencies = (
 			);
 			name = "Book Grocer";
+			packageProductDependencies = (
+				464C54C8268F524E00CC19A2 /* SwiftUIX */,
+			);
 			productName = "Book Grocer";
 			productReference = 464C54B2268F42DE00CC19A2 /* Book Grocer.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 464C54A9268F42DE00CC19A2;
+			packageReferences = (
+				464C54C7268F524E00CC19A2 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 464C54B3268F42DE00CC19A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464C54CD268F59F300CC19A2 /* Localizable.strings in Resources */,
 				464C54BD268F42DF00CC19A2 /* Preview Assets.xcassets in Resources */,
 				464C54BA268F42DF00CC19A2 /* Assets.xcassets in Resources */,
 			);
@@ -140,16 +171,29 @@
 			files = (
 				464C54B8268F42DE00CC19A2 /* ContentView.swift in Sources */,
 				464C54B6268F42DE00CC19A2 /* Book_GrocerApp.swift in Sources */,
+				464C54C5268F488800CC19A2 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		464C54CF268F59F300CC19A2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				464C54CE268F59F300CC19A2 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		464C54BF268F42DF00CC19A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -211,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -326,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		464C54C7268F524E00CC19A2 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		464C54C8268F524E00CC19A2 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 464C54C7268F524E00CC19A2 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 464C54AA268F42DE00CC19A2 /* Project object */;
 }

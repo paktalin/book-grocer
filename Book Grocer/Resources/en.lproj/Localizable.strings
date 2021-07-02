@@ -1,0 +1,16 @@
+/* 
+  english.strings
+  Book Grocer
+
+  Created by Lita Kornilova on 02.07.2021.
+  
+*/
+
+"onboarding.page1.title" = "Discounted Secondhand Books";
+"onboarding.page1.description" = "Used and near new secondhand books at great prices.";
+
+"onboarding.page2.title" = "20 Book Grocers Nationally";
+"onboarding.page2.description" = "We've successfully opened 20 stores across Australia.";
+
+"onboarding.page3.title" = "Sell or Recycle Your Old Books With Us";
+"onboarding.page3.description" = "If you're looking to downsize, sell or recycle old books, the Book Grocer can help.";
